@@ -8,7 +8,10 @@ heavy-navbar {
  --havy-navbar-color : # FFFFFF ;
  --havy-navbar-hover-color : #ffffff ;
 }
-
 .content {
-  margin-top: 100px;
+    margin-top: 80px;
+}
+.card {
+    height: 365.5px;
+    width: 684px;
 }
