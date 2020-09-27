@@ -1,0 +1,11 @@
+body {
+    padding: 0;
+    margin: 0;
+
+}
+heavy-navbar {
+  --heavy-navbar-background : #f09409 ;
+ --havy-navbar-color : # FFFFFF ;
+ --havy-navbar-hover-color : #ffffff ;
+}
+
