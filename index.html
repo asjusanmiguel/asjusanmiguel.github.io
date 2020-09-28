@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
   <script src='https://unpkg.com/heavy-navbar@0.0.16/dist/heavynavbar.js'></script>
   <link rel="stylesheet" href="./css/stylesheet.css">
   <link rel="stylesheet" href="./css/index.css">
@@ -20,11 +22,9 @@
     <a href="./media.html" slot="item-4">Multimedia</a>
     <a href="./contact.html" slot="item-5">Contacto</a>
   </heavy-navbar>
-<div id="set-height"></div>
-<video id="v0" tabindex="0", autobuffer preload >
-  <source type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' src="./assets/videos/main.mp4"></source>
-</video>
-<script src="./js/main_video.js"></script>
+  <section class="content">
+    <video autoplay playsinline style="pointer-events: none;"></video>
+  </section>
 </body>
 
 </html>
