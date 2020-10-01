@@ -10,12 +10,14 @@
   <link rel="stylesheet" href="./css/stylesheet.css">
   <link rel="stylesheet" href="./css/index.css">
   <link rel="shortcut icon" href="./assets/images/icono.png" type="image/x-icon">
+  <link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet" />
+
 
   <title>Asociación Juvenil San Miguel</title>
 </head>
 
 <body>
-  <heavy-navbar item-count="5" position="fixed-scroll" logo=".\assets\images\icono.png">
+  <heavy-navbar item-count="5" position="fixed" logo=".\assets\images\icono.png">
     <a href="./index.html" slot="item-1">Inicio</a>
     <a href="./about.html" slot="item-2">Sobre nosotros</a>
     <a href="./merchandising.html" slot="item-3">Merchandising</a>
@@ -23,6 +25,28 @@
     <a href="./contact.html" slot="item-5">Contacto</a>
   </heavy-navbar>
   <section class="content">
+    <video
+    id="my-video"
+    class="video-js"
+    controls
+    preload="auto"
+    width="1280"
+    height="853"
+    poster="./assets/images/video-caratule.png"
+    data-setup="{}"
+  >
+    <source src="./assets/videos/main.mp4" type="video/mp4" />
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p>
+  </video>
+
+  <script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
+</body>
   </section>
 </body>
 
