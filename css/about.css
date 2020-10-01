@@ -19,8 +19,8 @@ table .cargo {
 }
 table .nombre {
     width: 66%;
-    text-align: justify;
-
+    text-align: center;
+    border: 0.5px solid grey;
 }
 thead {
     text-align: center;
