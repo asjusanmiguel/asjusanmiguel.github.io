@@ -11,6 +11,11 @@ span {
   hr{
       margin: 2px;
   }
+  a {
+    text-emphasis: none;
+    text-decoration: none;
+    color: white;
+  }
 
 /*NEWS*/
 .news_parent {
