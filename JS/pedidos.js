@@ -2,7 +2,7 @@ var bolsas = 0;
 var pulseras = 0;
 var camisetas = 0;
 var loteria = 0;
-
+var resumen= '';
 
 
 
@@ -69,5 +69,9 @@ function restar_loteria(){
 };
 
 
+
+/*=================================================================*/
+
+document.getElementById("pedido_final").value = resumen;
 
 

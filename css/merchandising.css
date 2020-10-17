@@ -14,4 +14,8 @@
 .footer label{
     color: white;
 }
-.footer form 
+.form {
+    background-color: aqua;
+    float: right;
+    align-items: center;
+}

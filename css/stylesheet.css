@@ -3,11 +3,7 @@ body {
     margin: 0;
 
 }
-heavy-navbar {
-  --heavy-navbar-background : #f09409 ;
- --havy-navbar-color : # FFFFFF ;
- --havy-navbar-hover-color : #ffffff ;
-}
+nav
 
 .content {
   margin-top: 100px;
