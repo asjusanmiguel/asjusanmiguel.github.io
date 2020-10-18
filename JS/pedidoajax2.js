@@ -5,17 +5,17 @@ $("#btnSend").click(function () {
     parameters.phone = $("#phone").val();
     
             
-$.ajax({
-    url: "https://formspree.io/f/xvovzvjp",
-    method: "POST",
-    dataType: "json",
-    data: {
-      email: "",
-      message: "",
-      camisetas:    
-
-    }
-  });
+    $.ajax({
+      url: "https://formspree.io/f/xvovzvjp",
+      method: "POST",
+      dataType: "json",
+      data: {
+        email: "",
+        message: "",
+        camisetas:    
+  
+      }
+    });
 
     
     });
