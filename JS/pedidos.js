@@ -2,7 +2,7 @@ var bolsas = 0;
 var pulseras = 0;
 var camisetas = 0;
 var loteria = 0;
-var resumen= '';
+var resumen = ""    ;
 
 
 
@@ -25,6 +25,8 @@ function anadir_bolsas(){
 function restar_bolsas(){
     if (bolsas>0) {
         bolsas=bolsas-1;
+        var resumen= [bolsas, pulseras, camisetas, loteria];
+
     }
     document.getElementById('bolsas').innerHTML= bolsas;
     
@@ -71,7 +73,4 @@ function restar_loteria(){
 
 
 /*=================================================================*/
-
-document.getElementById("pedido_final").value = resumen;
-
 
