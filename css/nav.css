@@ -1,14 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    color: #f2f5f7;
-    font-family: sans-serif;
-    letter-spacing: 1px;
-    font-weight: 300;
-}
-body{
-    overflow-x: hidden;
-}
+
 nav{
     height: 6rem;
     width: 100vw;
@@ -39,10 +29,13 @@ nav{
     justify-content: space-evenly;
     align-items: center;
     text-transform: uppercase;
+    font-family: 'Cabin', Helvetica, Arial, sans-serif;
 }
 .nav-links li a{
     text-decoration: none;
+    color: #ffffff;
     margin: 0 0.7vw;
+    
 }
 .nav-links li a:hover {
     color: #61DAFB;
@@ -62,39 +55,6 @@ nav{
 }
 .nav-links li a:hover::before{
     width: 80%;
-}
-
-/*Styling Buttons*/
-.login-button{
-    background-color: transparent;
-    border: 1.5px solid #f2f5f7;
-    border-radius: 2em;
-    padding: 0.6rem 0.8rem;
-    margin-left: 2vw;
-    font-size: 1rem;
-    cursor: pointer;
-
-}
-.login-button:hover {
-    color: #131418;
-    background-color: #f2f5f7;
-    border:1.5px solid #f2f5f7;
-    transition: all ease-in-out 350ms;
-}
-.join-button{
-    color: #131418;
-    background-color: #61DAFB;
-    border: 1.5px solid #61DAFB;
-    border-radius: 2em;
-    padding: 0.6rem 0.8rem;
-    font-size: 1rem;
-    cursor: pointer;
-}
-.join-button:hover {
-    color: #f2f5f7;
-    background-color: transparent;
-    border:1.5px solid #f2f5f7;
-    transition: all ease-in-out 350ms;
 }
 
 /*Styling Hamburger Icon*/

@@ -78,7 +78,6 @@
     font-size: 15px;
     margin-bottom: 15px;
   }
-  
   .solution_card .solu_description button {
     border: 0;
     border-radius: 15px;
@@ -169,5 +168,10 @@
       margin: 0 auto;
     }
   }
-  
-  
+  .solution_cards_box .precio {
+   float: right;
+   font-size: 30px;
+   font-weight: bolder;
+   font-family: 'Cabin', Helvetica, Arial, sans-serif;
+
+ }
