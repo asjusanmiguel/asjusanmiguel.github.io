@@ -3,14 +3,9 @@ body {
     margin: 0;
 
 }
-heavy-navbar {
-  --heavy-navbar-background : #f09409 ;
- --havy-navbar-color : # FFFFFF ;
- --havy-navbar-hover-color : #ffffff ;
-}
 
 .content {
-  margin-top: 100px;
+  margin-top: 130px;
   padding-left: 5%;
     padding-right: 5%;
 }
@@ -21,7 +16,7 @@ h1 {
  line-height: 100px;
 }
  
-p {
+p,div,ul,li {
   font-family: 'Cabin', Helvetica, Arial, sans-serif;
   font-size: 15px;
   line-height: 25px;

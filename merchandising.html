@@ -4,27 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src='https://unpkg.com/heavy-navbar@0.0.16/dist/heavynavbar.js'></script>
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
     <link rel="stylesheet" href="./css/stylesheet.css">
     <link rel="stylesheet" href="./css/merchandising.css">
     <link rel="stylesheet" href="./css/card.css">
+    <link rel="stylesheet" href="./css/nav.css">
     <link rel="shortcut icon" href="./assets/images/icono.png" type="image/x-icon">
 
     <title>Merchandising - Asociación Juvenil San Miguel</title>
 </head>
 
 <body>
-    <heavy-navbar item-count="5" position="fixed" logo=".\assets\images\icono.png">
-        <a href="./index.html" slot="item-1">Inicio</a>
-        <a href="./about.html" slot="item-2">Sobre nosotros</a>
-        <a href="./merchandising.html" slot="item-3">Merchandising</a>
-        <a href="./media.html" slot="item-4">Multimedia</a>
-        <a href="./contact.html" slot="item-5">Contacto</a>
-    </heavy-navbar>
-
+  <nav>
+    <div class="logo">
+        <img src="./assets/images/icono.png" alt="Logo Image">
+    </div>
+    <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    <ul class="nav-links">
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./about.html">Sobre nosotros</a></li>
+        <li><a href="./merchandising.html">Merchandising</a></li>
+        <li><a href="./media.html">Servicios</a></li>
+        <li><a href="./contact.html">Contacto</a></li>
+    </ul>
+</nav>  
+    
     <section class="content">
+      <div class="form">
+        <form action="https://formspree.io/f/xvovzvjp" method="POST">
+          <p>Nombre</p>
+        <input type="text" name="name">
+        <p>Teléfono</p>
+        <p>+34<input type="number" name="phone" maxlength="9" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"/></p>
+        <input type="text" name="pedido" id="pedido_final" readonly>
+        <input type="submit" value="Send">
+      </form></div>
         <div class="section_our_solution">
             <div class="row">
               <div class="col-lg-12 col-md-12 col-sm-12">
@@ -38,10 +57,12 @@
                         <h3>Pulseras</h3>
                       </div>
                       <div class="solu_description">
-                          <br>
+                        <div class="precio">2€</div>
+
                         <button type="button" class="read_more_btn" onclick="anadir_pulseras()">+</button>
                         <div class="cantidad" id="pulseras"></div>
                         <button type="button" class="read_more_btn" onclick="restar_pulseras()">-</button>
+                        
                       </div>
                     </div>
                     <div class="solution_card">
@@ -53,6 +74,8 @@
                         <h3>Bolsas</h3>
                       </div>
                       <div class="solu_description">
+                        <div class="precio">5€</div>
+
                         <button type="button" class="read_more_btn" onclick="anadir_bolsas()">+</button>
                         <div class="cantidad" id="bolsas"></div>
                         <button type="button" class="read_more_btn"onclick="restar_bolsas()" >-</button>
@@ -70,6 +93,7 @@
                         <h3>Camisetas</h3>
                       </div>
                       <div class="solu_description">
+                        <div class="precio">5€</div>
                         <button type="button" class="read_more_btn" onclick="anadir_camisetas()" >+</button>
                         <div class="cantidad" id="camisetas"></div>
                         <button type="button" class="read_more_btn" onclick="restar_camisetas()">-</button>
@@ -84,6 +108,8 @@
                         <h3>Lotería</h3>
                       </div>
                       <div class="solu_description">
+                        <p>De los 5 euros 1 es de donativo para la Asociación </p>
+                        <div class="precio">5€</div>
                         <button type="button" class="read_more_btn" onclick="anadir_loteria()">+</button>
                         <div class="cantidad" id="loteria"></div>
                         <button type="button" class="read_more_btn" onclick="restar_loteria()">-</button>
@@ -94,9 +120,10 @@
               </div>
             </div>
           </div>
+          
+          
     </section>
-
-
 </body>
 <script src="./JS/pedidos.js"></script>
+<script src="./JS/nav.js"></script>
 </html>
