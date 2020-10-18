@@ -3,7 +3,11 @@ h1 {
     font-family: 'Raleway', Georgia, Times, serif;
 
 }
-p,div,ul,li {
+
+p,
+div,
+ul,
+li {
     text-align: justify;
     font-family: 'Cabin', Helvetica, Arial, sans-serif;
 
